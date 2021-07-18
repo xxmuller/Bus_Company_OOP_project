@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ShowAdminsController">
+    <children>
+        <AnchorPane prefHeight="82.0" prefWidth="1200.0" style="-fx-background-color: #512da8;">
+            <children>
+                <Button layoutX="984.0" layoutY="19.0" mnemonicParsing="false" onAction="#logoutButtonClicked" prefHeight="44.0" prefWidth="130.0" style="-fx-background-color: #e91e63;" text="LOG OUT" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="750.0" prefWidth="300.0" style="-fx-background-color: #6200EE;">
+            <children>
+                <Button layoutX="47.0" layoutY="93.0" mnemonicParsing="false" onAction="#showUsersButtonClicked" prefHeight="54.0" prefWidth="183.0" style="-fx-background-color: #e91e63;" text="Show Users" textFill="WHITE">
+                    <font>
+                        <Font size="25.0" />
+                    </font>
+                </Button>
+                <Button layoutX="47.0" layoutY="182.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="183.0" style="-fx-background-color: #e91e63;" text="Show Admins" textFill="WHITE">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Button>
+            <Button layoutX="47.0" layoutY="272.0" mnemonicParsing="false" onAction="#manageUsersButtonClicked" prefHeight="54.0" prefWidth="183.0" style="-fx-background-color: #e91e63;" text="Check ID" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Button>
+            <Button layoutX="47.0" layoutY="358.0" mnemonicParsing="false" onAction="#showTicketsButtonClicked" prefHeight="54.0" prefWidth="183.0" style="-fx-background-color: #e91e63;" text="Show Tickets" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+        <TableView fx:id="usersTable" layoutX="330.0" layoutY="108.0" prefHeight="314.0" prefWidth="820.0">
+            <columns>
+                <TableColumn fx:id="firstNameColumn" prefWidth="122.39996337890625" text="First Name" />
+                <TableColumn fx:id="lastNameColumn" prefWidth="125.5999755859375" text="Last Name" />
+                <TableColumn fx:id="dateOfBirthColumn" prefWidth="128.0" text="Date of Birth" />
+                <TableColumn fx:id="categoryColumn" prefWidth="143.20001220703125" text="Category" />
+                <TableColumn fx:id="usernameColumn" prefWidth="156.0" text="Username" />
+                <TableColumn fx:id="passwordColumn" prefWidth="141.5999755859375" text="Password" />
+            </columns>
+        </TableView>
+      <Button fx:id="deleteButton" layoutX="511.0" layoutY="478.0" mnemonicParsing="false" onAction="#deleteAdminButtonClicked" prefHeight="50.0" prefWidth="171.0" style="-fx-background-color: #e91e63;" text="Delete Admin" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Button fx:id="chngInfoButton" layoutX="840.0" layoutY="478.0" mnemonicParsing="false" onAction="#changeInfoButtonClicked" prefHeight="50.0" prefWidth="171.0" style="-fx-background-color: #e91e63;" text="Change Info" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <MenuButton fx:id="menuButton" layoutX="449.0" layoutY="594.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: #e91e63;" text="MenuButton" textFill="WHITE">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#fNameOpt" text="First Name" />
+          <MenuItem mnemonicParsing="false" onAction="#lNameOpt" text="Last Name" />
+            <MenuItem mnemonicParsing="false" onAction="#dateofBirthOpt" text="Date of birth" />
+            <MenuItem mnemonicParsing="false" onAction="#categoryOpt" text="Category" />
+            <MenuItem mnemonicParsing="false" onAction="#usernameOpt" text="Username" />
+            <MenuItem mnemonicParsing="false" onAction="#passwordOpt" text="Password" />
+        </items>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </MenuButton>
+      <TextField fx:id="newValue_tf" layoutX="670.0" layoutY="592.0" prefHeight="44.0" prefWidth="170.0" promptText="Type new value">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="updateButton" layoutX="909.0" layoutY="590.0" mnemonicParsing="false" onAction="#updateButtonClicked" prefHeight="44.0" prefWidth="150.0" style="-fx-background-color: #2c73ed;" text="Update" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

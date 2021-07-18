@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1200.0" style="-fx-background-color: #0000;" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.SignUpController">
+    <children>
+        <Button layoutX="539.0" layoutY="648.0" mnemonicParsing="false" onAction="#regButtonClicked" prefHeight="46.0" prefWidth="150.0" style="-fx-background-color: #e91e63; -fx-background-radius: 100px;" text="Sign Up" textFill="#f2f2f2">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Button>
+        <AnchorPane prefHeight="185.0" prefWidth="1200.0" style="-fx-background-color: #6200EE;">
+            <children>
+                <Label layoutX="501.0" layoutY="65.0" text="SIGN UP" textFill="#f8f8f8">
+                    <font>
+                        <Font name="Arial" size="48.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <HBox layoutX="308.0" layoutY="221.0" prefHeight="8.0" prefWidth="194.0" style="-fx-border-color: #515151; -fx-border-width: 0px 0px 1.5px 0px;">
+            <children>
+                <TextField fx:id="tf_firstName" prefHeight="46.0" prefWidth="193.0" promptText="Meno" style="-fx-background-color: transparent;">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </TextField>
+            </children>
+        </HBox>
+        <HBox layoutX="724.0" layoutY="220.0" prefHeight="46.0" prefWidth="194.0" style="-fx-border-color: #515151; -fx-border-width: 0px 0px 1.5px 0px;">
+         <children>
+                <TextField fx:id="tf_lastName" prefHeight="46.0" prefWidth="194.0" promptText="Priezvisko" style="-fx-background-color: transparent;">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </TextField>
+         </children>
+        </HBox>
+        <HBox layoutX="724.0" layoutY="310.0" prefHeight="46.0" prefWidth="194.0" style="-fx-border-color: #515151; -fx-border-width: 0px 0px 1.5px 0px;">
+         <children>
+                <TextField fx:id="tf_email" prefHeight="46.0" prefWidth="194.0" promptText="E-mail" style="-fx-background-color: transparent;">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </TextField>
+         </children>
+        </HBox>
+        <HBox layoutX="308.0" layoutY="310.0" prefHeight="46.0" prefWidth="194.0" style="-fx-border-color: #515151; -fx-border-width: 0px 0px 1.5px 0px;">
+            <children>
+                <TextField fx:id="tf_dateOfBirth" prefHeight="46.0" prefWidth="194.0" promptText="Dátum narodenia" style="-fx-background-color: transparent;">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </TextField>
+            </children>
+        </HBox>
+        <HBox layoutX="724.0" layoutY="409.0" prefHeight="46.0" prefWidth="194.0" style="-fx-border-color: #515151; -fx-border-width: 0px 0px 1.5px 0px;">
+         <children>
+                <TextField fx:id="tf_password" prefHeight="46.0" prefWidth="194.0" promptText="Heslo" style="-fx-background-color: transparent;">
+                    <font>
+                        <Font name="Arial" size="20.0" />
+                    </font>
+                </TextField>
+         </children>
+        </HBox>
+        <HBox layoutX="308.0" layoutY="409.0" prefHeight="46.0" prefWidth="194.0" style="-fx-border-color: #515151; -fx-border-width: 0px 0px 1.5px 0px;">
+            <children>
+                <TextField fx:id="tf_username" prefHeight="46.0" prefWidth="194.0" promptText="Prihl. meno" style="-fx-background-color: transparent;">
+                    <font>
+                        <Font name="Arial" size="20.0" />
+                    </font>
+                </TextField>
+            </children>
+        </HBox>
+        <MenuButton fx:id="chooseCategoryMenu" layoutX="478.0" layoutY="497.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="272.0" style="-fx-background-color: #e91e63; -fx-background-radius: 100px;" text="Choose category (optional)" textFill="WHITE">
+            <items>
+                <MenuItem fx:id="studentOpt" mnemonicParsing="false" onAction="#studentOptClicked" text="Študent" />
+                <MenuItem fx:id="pensionOpt" mnemonicParsing="false" onAction="#pensionOptClicked" text="Dôchodca" />
+                <MenuItem fx:id="ztpOpt" mnemonicParsing="false" onAction="#ztpOptClicked" text="Držiteľ ZŤP preukazu" />
+            </items>
+            <font>
+                <Font size="16.0" />
+            </font>
+        </MenuButton>
+        <Button layoutX="959.0" layoutY="648.0" mnemonicParsing="false" onAction="#backButtClicked" prefHeight="38.0" prefWidth="121.0" style="-fx-background-color: #2c73ed; -fx-background-radius: 100px;" text="Go Back" textFill="#f2f2f2">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Button>
+      <HBox layoutX="482.0" layoutY="566.0" prefHeight="46.0" prefWidth="263.0" style="-fx-border-color: #515151; -fx-border-width: 0px 0px 1.5px 0px;">
+         <children>
+            <TextField fx:id="tf_idcard" prefHeight="47.0" prefWidth="256.0" promptText="ID Card (optional)" style="-fx-background-color: transparent;">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+    </children>
+</AnchorPane>

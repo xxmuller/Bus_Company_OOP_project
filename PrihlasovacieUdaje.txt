@@ -1,0 +1,32 @@
+Pouzivatelia:
+
+username: petom 
+password: 1111
+kategoria: dospely
+
+username: terbos 
+password: 2222
+kategoria: student
+
+username: palod 
+password: palo123
+kategoria: ztp
+
+username: davidm 
+password: dado123
+kategoria: dieta
+
+username: hlavac 
+password: hlava123
+kategoria: dochodca
+
+Admins:
+
+username: ceo
+password: 1234
+
+username: secretary
+password: 1111
+
+username: editor
+password: 0000 

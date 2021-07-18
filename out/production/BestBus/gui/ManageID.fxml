@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="wrongAdminLabel" prefHeight="750.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ManageIDController">
+    <children>
+        <AnchorPane prefHeight="82.0" prefWidth="1200.0" style="-fx-background-color: #512da8;">
+            <children>
+                <Button layoutX="984.0" layoutY="19.0" mnemonicParsing="false" onAction="#logoutButtonClicked" prefHeight="44.0" prefWidth="130.0" style="-fx-background-color: #e91e63;" text="LOG OUT" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="750.0" prefWidth="300.0" style="-fx-background-color: #6200EE;">
+            <children>
+                <Button layoutX="47.0" layoutY="93.0" mnemonicParsing="false" onAction="#showUsersButtonClicked" prefHeight="54.0" prefWidth="183.0" style="-fx-background-color: #e91e63;" text="Show Users" textFill="WHITE">
+                    <font>
+                        <Font size="25.0" />
+                    </font>
+                </Button>
+                <Button layoutX="47.0" layoutY="182.0" mnemonicParsing="false" onAction="#showAdminsButtonClicked" prefHeight="54.0" prefWidth="183.0" style="-fx-background-color: #e91e63;" text="Show Admins" textFill="WHITE">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Button>
+            <Button layoutX="47.0" layoutY="272.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="183.0" style="-fx-background-color: #e91e63;" text="Check ID" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Button>
+            <Button layoutX="47.0" layoutY="358.0" mnemonicParsing="false" onAction="#showTicketsButtonClicked" prefHeight="54.0" prefWidth="183.0" style="-fx-background-color: #e91e63;" text="Show Tickets" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+      <Label fx:id="checkLabel" layoutX="649.0" layoutY="158.0" text="Check ID Card:">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username_tf" layoutX="566.0" layoutY="279.0" prefHeight="38.0" prefWidth="183.0" promptText="Type username">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <Label fx:id="idTypeLabel" layoutX="532.0" layoutY="449.0" text="ID Card Type:">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="cardTypeLabel" layoutX="783.0" layoutY="449.0" text=" ">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="acceptButton" layoutX="668.0" layoutY="550.0" mnemonicParsing="false" onAction="#acceptCardButtonClicked" prefHeight="44.0" prefWidth="122.0" style="-fx-background-color: #e91e63;" text="Accept Card" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="acceptedLabel" layoutX="602.0" layoutY="554.0" text="ID Card already accepted">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="checkCardButton" layoutX="788.0" layoutY="276.0" mnemonicParsing="false" onAction="#checkCardButtonClicked" prefHeight="44.0" prefWidth="122.0" style="-fx-background-color: #2c73ed;" text="Check Card" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="wrngAdminLabel" layoutX="576.0" layoutY="218.0" text="You cannot check user's ID Card!">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="532.0" layoutY="358.0" text="ID Card Number:">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="idCardLabel" layoutX="783.0" layoutY="358.0" text=" ">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

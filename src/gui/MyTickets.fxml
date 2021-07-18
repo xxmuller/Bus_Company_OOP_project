@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MyTicketsController">
+    <children>
+        <AnchorPane prefHeight="82.0" prefWidth="1200.0" style="-fx-background-color: #512da8;">
+            <children>
+                <Button layoutX="984.0" layoutY="19.0" mnemonicParsing="false" onAction="#logoutButtonClicked" prefHeight="43.0" prefWidth="130.0" style="-fx-background-color: #e91e63;" text="LOG OUT" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Label fx:id="welcomeLabel" layoutX="312.0" layoutY="32.0" textFill="WHITE">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="750.0" prefWidth="300.0" style="-fx-background-color: #6200EE;">
+            <children>
+                <Button layoutX="47.0" layoutY="93.0" mnemonicParsing="false" onAction="#buyTicketButtonClicked" prefHeight="59.0" prefWidth="206.0" style="-fx-background-color: #e91e63;" text="Buy Ticket" textFill="WHITE">
+                    <font>
+                        <Font size="25.0" />
+                    </font>
+                </Button>
+                <Button layoutX="47.0" layoutY="360.0" mnemonicParsing="false" onAction="#myProfileButtonClicked" prefHeight="59.0" prefWidth="206.0" style="-fx-background-color: #e91e63;" text="My Profile" textFill="WHITE">
+                    <font>
+                        <Font size="25.0" />
+                    </font>
+                </Button>
+                <Button layoutX="47.0" layoutY="182.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="206.0" style="-fx-background-color: #e91e63;" text="My Tickets" textFill="WHITE">
+                    <font>
+                        <Font size="25.0" />
+                    </font>
+                </Button>
+            <Button layoutX="47.0" layoutY="272.0" mnemonicParsing="false" onAction="#myCardButtonClicked" prefHeight="59.0" prefWidth="206.0" style="-fx-background-color: #e91e63;" text="My BB Card" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+      <Label fx:id="dayLabel" layoutX="388.0" layoutY="183.0" text="Tickets for one day: ">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="weekLabel" layoutX="388.0" layoutY="282.0" text="Tickets for one week: ">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="monthLabel" layoutX="388.0" layoutY="375.0" text="Tickets for one month: ">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

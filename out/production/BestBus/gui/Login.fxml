@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" style="-fx-background-color: white;" vgap="10" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.LoginController">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="750.0" prefWidth="1200.0" style="-fx-background-color: #0000;">
+            <children>
+                <Button layoutX="519.0" layoutY="486.0" mnemonicParsing="false" onAction="#loginButtonClicked" prefHeight="54.0" prefWidth="162.0" style="-fx-background-color: #e91e63; -fx-background-radius: 100PX;" text="LOG IN" textFill="#f5f5f5">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <AnchorPane prefHeight="170.0" prefWidth="1200.0" style="-fx-background-color: #6200EE;">
+                    <children>
+                        <Label layoutX="508.0" layoutY="53.0" text="LOG IN" textFill="#f0f0f0">
+                            <font>
+                                <Font name="Arial" size="54.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+                <HBox layoutX="475.0" layoutY="262.0" prefHeight="56.0" prefWidth="250.0" style="-fx-background-color: white; -fx-border-color: #515151; -fx-border-width: 0PX 0PX 1.5PX 0PX;">
+                    <children>
+                        <TextField fx:id="tf_username" prefHeight="56.0" prefWidth="250.0" promptText="username" style="-fx-background-color: transparent;">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </TextField>
+                    </children>
+                </HBox>
+                <HBox layoutX="475.0" layoutY="366.0" prefHeight="56.0" prefWidth="250.0" style="-fx-background-color: white; -fx-border-color: #515151; -fx-border-width: 0px 0px 1.5px 0px;">
+                    <children>
+                        <PasswordField fx:id="pf_password" prefHeight="56.0" prefWidth="258.0" promptText="password" style="-fx-background-color: transparent;">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </PasswordField>
+                    </children>
+                </HBox>
+                <Button layoutX="921.0" layoutY="605.0" mnemonicParsing="false" onAction="#backButtClicked" prefHeight="48.0" prefWidth="120.0" style="-fx-background-color: #2c73ed; -fx-background-radius: 100PX;" text="Go Back" textFill="#f5f5f5">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>
